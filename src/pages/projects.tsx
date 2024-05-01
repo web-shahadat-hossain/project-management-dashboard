@@ -4,7 +4,6 @@ import { List, Button } from "antd";
 import { useRouter } from "next/router";
 
 const fetchProjects = async () => {
-  // Mock API call to fetch projects
   const response = await fetch("/api/projects");
   if (!response.ok) {
     throw new Error("Failed to fetch projects");
