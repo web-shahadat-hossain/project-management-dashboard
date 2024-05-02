@@ -20,7 +20,8 @@ const Projects = () => {
   } = useQuery("projects", fetchProjects);
 
   const handleProjectClick = (projectId: any) => {
-    router.push(`/project/${projectId}`);
+    console.log(projectId, "asdf");
+    router.push(`/projects/${projectId}`);
   };
 
   if (isLoading) return <div>Loading...</div>;

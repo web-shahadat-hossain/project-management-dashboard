@@ -1,12 +1,15 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import Link from "next/link";
+import { Button } from "antd";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const HomePage = () => {
   return (
-    <>
-      <h1>hello</h1>
-    </>
+    <div style={{ padding: "50px", textAlign: "center" }}>
+      <h1>Welcome to Project Management App</h1>
+      <Link href="/login">
+        <Button type="primary">Login</Button>
+      </Link>
+    </div>
   );
-}
+};
+
+export default HomePage;

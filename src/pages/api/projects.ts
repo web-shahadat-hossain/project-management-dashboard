@@ -1,9 +1,7 @@
-// pages/api/projects.js
-
 const projectsData = [
-  { id: 1, name: "Project A", description: "Description for Project A" },
-  { id: 2, name: "Project B", description: "Description for Project B" },
-  { id: 3, name: "Project C", description: "Description for Project C" },
+  { id: "1", name: "Project A", description: "Description for Project A" },
+  { id: "2", name: "Project B", description: "Description for Project B" },
+  { id: "3", name: "Project C", description: "Description for Project C" },
 ];
 
 export default function handler(req: any, res: any) {
